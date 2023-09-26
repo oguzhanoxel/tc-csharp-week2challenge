@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B02A551C-E28A-44C7-917A-A59513C5E666}</ProjectGuid>
+    <ProjectGuid>{3EDBCA68-48ED-451C-A147-B60744CD0E70}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GasStationConsoleApp</RootNamespace>
-    <AssemblyName>GasStationConsoleApp</AssemblyName>
+    <RootNamespace>TestConsoleApp</RootNamespace>
+    <AssemblyName>TestConsoleApp</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,9 +50,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GasStationProject\GasStationProject.csproj">
-      <Project>{d365bab8-880a-4cd7-b775-4b7e9471539e}</Project>
-      <Name>GasStationProject</Name>
+    <ProjectReference Include="..\FileManager\FileManager.csproj">
+      <Project>{A5EE5A1D-536F-4CBE-916D-0AA962D08CB4}</Project>
+      <Name>FileManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\Services.csproj">
+      <Project>{E9A1A0FF-E909-4871-8FC4-CF55C37D09B8}</Project>
+      <Name>Services</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
